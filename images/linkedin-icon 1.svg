@@ -1,0 +1,14 @@
+<svg width="36.000000" height="36.000000" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip14_97">
+			<rect id="linkedin-icon 1" rx="-0.500000" width="35.000000" height="35.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="linkedin-icon 1" rx="-0.500000" width="35.000000" height="35.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip14_97)">
+		<path id="Vector" d="M18 0C8.05 0 0 8.05 0 18C0 27.94 8.05 36 18 36C27.94 36 36 27.94 36 18C36 8.05 27.94 0 18 0ZM13.19 26.7L9.24 26.7L9.24 13.93L13.19 13.93L13.19 26.7ZM11.2 12.26C9.91 12.26 8.86 11.2 8.86 9.9C8.86 8.6 9.91 7.55 11.2 7.55C12.49 7.55 13.53 8.6 13.53 9.9C13.53 11.2 12.49 12.26 11.2 12.26ZM28 26.7L24.07 26.7L24.07 20C24.07 18.16 23.37 17.13 21.92 17.13C20.34 17.13 19.51 18.2 19.51 20L19.51 26.7L15.72 26.7L15.72 13.93L19.51 13.93L19.51 15.65C19.51 15.65 20.65 13.54 23.36 13.54C26.06 13.54 28 15.19 28 18.61L28 26.7Z" fill="#47474A" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
