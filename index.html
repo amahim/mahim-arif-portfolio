@@ -88,8 +88,8 @@
              <div class="flex flex-col-reverse md:flex-row md:justify-between md:mt-8 md:items-center mt-4 md:px-8">
                 <!-- left//dwn -->
                  <div class="flex flex-col md:gap-4 gap-2">
-                    <h3 class="text-white font-medium text-[18px] md:text-[20px]">Hi, I'm Arif Mahim</h3>
-                    <p>I am a front-end web developer.<br>You can hire me.</p>
+                    <h3 class="dark:text-white text-white font-medium text-[18px] md:text-[20px]">Hi, I'm Arif Mahim</h3>
+                    <p class="dark:text-white text-white">I am a front-end web developer.<br>You can hire me.</p>
                     <button class="btn bg-orng text-white md:text-[20px]">Hire Me<i class="fa-solid fa-plus"></i></button>
                  </div>
                  <!-- right//up -->
@@ -122,7 +122,7 @@
                                   <th class="text-white font-inter font-medium text-[18px]">Html/Css-Tailwind-daisyUI</th>
                                 </tr>
                               </thead>
-                              <tbody>
+                              <tbody class="text-[#989AA6] dark:text-[#989AA6] ">
                                 <tr><td><a href="https://amahim.github.io/biker-zone-daisyUi/">Biker Zone</a></td></tr>
                                 <tr><td><a href="https://amahim.github.io/assignment-three/">House Designing Site</a></td></tr>
                                 <tr><td><a href="https://amahim.github.io/assignment-two/">Fitness Site</a></td></tr>
@@ -136,7 +136,7 @@
                                   <th class="text-white font-inter font-medium text-[18px]">Javascript</th>
                                 </tr>
                               </thead>
-                              <tbody>
+                              <tbody class="text-[#989AA6] dark:text-[#989AA6] ">
                                 <tr><td><a href="https://amahim.github.io/mini-project/">Mini Projects</a></td></tr>
                                 <tr><td><a href="https://amahim.github.io/payoo-bank/">PayCash</a></td></tr>
                                 <tr><td><a href="https://amahim.github.io/pc-component-dom/">PC Component Store</a></td></tr>
@@ -195,17 +195,21 @@
                         </form> -->
 
                         <!-- test form b -->
-                        <form class="md:h-[172px] space-y-2" action="https://formsubmit.co/arifbin71@gmail.com" method="POST">
-                          <div class="flex md:flex-row flex-col md:justify-between gap-2">
-                              <input type="email" name="email" placeholder="Your email" class="input input-bordered input-sm w-full" />
-                              <input type="number" placeholder="Your phone" class="input input-bordered input-sm w-full" />
+                        <form class="md:h-[172px] space-y-2 " action="https://formsubmit.co/ddb6305a073dc04ef0bba3fe1047704b" method="POST">
+                        <!-- <form class="md:h-[172px] space-y-2" action="https://formsubmit.co/arifbin71@gmail.com" method="POST"> -->
+                          <div class="flex md:flex-row flex-col md:justify-between gap-2 ">
+                              <input type="email" name="email" required placeholder="Your email" class=" text-[#989AA6] dark:text-[#989AA6]  border-2 border-[#989AA6] input input-bordered input-sm w-full bg-[rgb(27,27,27)]" />
+                              <input type="text" name="name" required placeholder="Your name" class=" text-[#989AA6] dark:text-[#989AA6] border-2 border-[#989AA6]  input input-bordered input-sm w-full bg-[rgb(27,27,27)] ">
+                              <!-- <input type="number" placeholder="Your phone" class="input input-bordered input-sm w-full" /> -->
                           </div>
-                          <textarea placeholder="Type here"class=" textarea textarea-bordered textarea-sm w-full"></textarea>
+                          <textarea placeholder="Type here"class="bg-[rgb(27,27,27)] textarea textarea-bordered textarea-sm w-full text-[#989AA6] dark:text-[#989AA6] border-2 border-[#989AA6]" name="message"></textarea>
                           <div>
-                              <button type="submit" class="btn w-full font-medium md:text-2xl text-[18px] md:text-[20px]" >Send <i class="fa-solid fa-envelope"></i></button>
+                            <input type="hidden" name="_next" value="https://amahim.github.io/mahim-arif-portfolio/">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                              <button type="submit" class=" text-[#989AA6] dark:text-[#989AA6] btn w-full border-2 border-[#989AA6] font-medium md:text-2xl text-[18px] md:text-[20px] bg-[#16161694]" >Send <i class="fa-solid fa-envelope"></i></button>
                           </div>
-                          <input type="hidden" name="_next" value="https://amahim.github.io/mahim-arif-portfolio/">
-                          <input type="hidden" name="_template" value="table">
+                          
                         </form>
                         <!-- test form end -->
                      </div>
