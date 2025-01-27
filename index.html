@@ -1,209 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahim Arif</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-prim':'#1B1B1B',
-                'border-prim':'#262626',
-                'orng':'#F35034'
-              }
-            }
-          }
-        }
-      </script>
-      <style>
-        .font-inter{
-            font-family: "Inter", sans-serif;
-        }
-      </style>
-</head>
-<body class="font-inter bg-[#161616] py-10">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bg-prim": "#1B1B1B",
+              "border-prim": "#262626",
+              orng: "#F35034",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-inter bg-[#161616] py-10">
     <header class="w-4/5 mx-auto">
-        <!-- navbar -->
-        <nav class="bg-bg-prim border-2 border-[#262626] md:px-4 rounded-xl">
-            <div class="navbar justify-between flex-row-reverse md:flex-row">
-                <div class="pr-2 md:pr-0">
-                    <h3 class="text-orng text-[20px] md:text-2xl font-medium">Mahim Arif</h3>
-                </div>
-                  <div class="dropdown md:hidden">
-                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        color="white"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-bg-prim rounded-box z-[1] mt-3 w-52 p-2 shadow text-white">
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#projects">Projects</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <li><a href="#socials">Socials</a></li>
-                    </ul>
-                  </div>
-                <div class="hidden md:flex">
-                  <ul class="flex gap-[100px] text-white text-[20px]">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#socials">Socials</a></li>
-                  </ul>
-                </div>
-              </div>
-        </nav>
-        <!-- banner -->
-         <div class="bg-bg-prim border-2 border-[#262626] rounded-xl p-4 mt-4" id="about">
-            <!-- up -->
-            <div class="flex md:flex-row flex-col md:justify-between md:items-center gap-2 md:gap-0">
-                <div class="border-l-2 border-orng pl-1 pt-1">
-                    <h3 class="text-white font-medium text-2xl">Front-End Developer</h3>
-                </div>
-                <div class=" text-center rounded-xl border-2 border-orng bg-[#161616] md:w-1/4 w-2/4 p-1" >
-                    <p class="text-white rounded-full">Available for jobs</p>
-                </div>
+      <!-- navbar -->
+      <nav class="bg-bg-prim border-2 border-[#262626] md:px-4 rounded-xl">
+        <div class="navbar justify-between flex-row-reverse md:flex-row">
+          <div class="pr-2 md:pr-0">
+            <h3 class="text-orng text-[20px] md:text-2xl font-medium">
+              Mahim Arif
+            </h3>
+          </div>
+          <div class="dropdown md:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                color="white"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <!-- down -->
-             <div class="flex flex-col-reverse md:flex-row md:justify-between md:mt-8 md:items-center mt-4 md:px-8">
-                <!-- left//dwn -->
-                 <div class="flex flex-col md:gap-4 gap-2">
-                    <h3 class="dark:text-white text-white font-medium text-[18px] md:text-[20px]">Hi, I'm Arif Mahim</h3>
-                    <p class="dark:text-white text-white">I am a front-end web developer.<br>You can hire me.</p>
-                    <a href="#contact" class="btn bg-orng text-white md:text-[20px]">Hire Me<i class="fa-solid fa-plus"></i></a>
-                 </div>
-                 <!-- right//up -->
-                  <div>
-                    <div class="avatar">
-                        <div class="md:w-48 w-24 rounded-xl">
-                          <img src="./images/mahim.jpg" />
-                        </div>
-                      </div>
-                  </div>
-             </div>
-         </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-bg-prim rounded-box z-[1] mt-3 w-52 p-2 shadow text-white"
+            >
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#socials">Socials</a></li>
+            </ul>
+          </div>
+          <div class="hidden md:flex">
+            <ul class="flex gap-[100px] text-white text-[20px]">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#socials">Socials</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div
+        class="bg-bg-prim border-2 border-[#262626] rounded-xl p-4 mt-4"
+        id="about"
+      >
+        <!-- up -->
+        <div
+          class="flex md:flex-row flex-col md:justify-between md:items-center gap-2 md:gap-0"
+        >
+          <div class="border-l-2 border-orng pl-1 pt-1">
+            <h3 class="text-white font-medium text-2xl">Front-End Developer</h3>
+          </div>
+          <div
+            class="text-center rounded-xl border-2 border-orng bg-[#161616] md:w-1/4 w-2/4 p-1"
+          >
+            <a
+              href="./images/Mahim Arif Resume.pdf"
+              download="Mahim_Arif_Resume.pdf"
+              class="text-white rounded-full"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+        <!-- down -->
+        <div
+          class="flex flex-col-reverse md:flex-row md:justify-between md:mt-8 md:items-center mt-4 md:px-8"
+        >
+          <!-- left//dwn -->
+          <div class="flex flex-col md:gap-4 gap-2">
+            <h3
+              class="dark:text-white text-white font-medium text-[18px] md:text-[20px]"
+            >
+              Hi, I'm Arif Mahim
+            </h3>
+            <p class="dark:text-white text-white">
+              I am a front-end web developer.<br />You can hire me.
+            </p>
+            <a href="#contact" class="btn bg-orng text-white md:text-[20px]"
+              >Hire Me<i class="fa-solid fa-plus"></i
+            ></a>
+          </div>
+          <!-- right//up -->
+          <div>
+            <div class="avatar">
+              <div class="md:w-48 w-24 rounded-xl">
+                <img src="./images/mahim.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="w-4/5 mx-auto flex md:flex-row flex-col mt-5 md:justify-between md:gap-0 gap-4">
-            <!-- left side -->
-            <div class="md:w-[49%] w-full space-y-4">
-                <!-- l-up projects-->
-                 <div class="bg-bg-prim border-2 border-[#262626] rounded-xl px-4 py-4" id="projects">
-                    <!-- headings -->
-                    <div class="badge badge-primary rounded-xl bg-orng border-0 badge-sm p-3 md:p-4">
-                        <h4 class="text-white  md:font-medium md:text-[20px]">Recent Projects</h4>
-                    </div>
-                    <!-- works -->
-                     <div class="mt-2">
-                        <div class="md:h-48 h-52 overflow-x-auto rounded-xl">
-                            <table class="table table-pin-rows rounded-xl">
-                              <thead>
-                                <tr class="bg-[#c04e3a]">
-                                  <th class="text-white font-inter font-medium text-[18px]">Html/Css-Tailwind-daisyUI</th>
-                                </tr>
-                              </thead>
-                              <tbody class="text-[#989AA6] dark:text-[#989AA6] ">
-                                <tr><td><a href="https://amahim.github.io/biker-zone-daisyUi/" target="_blank">Biker Zone</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/assignment-three/" target="_blank">House Designing Site</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/assignment-two/" target="_blank">Fitness Site</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/hockey-site/" target="_blank">Hockey Site</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/chocolate-shop/" target="_blank">Chocolate Shop</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/tea-house-tailwind/" target="_blank">Tea House</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/penguin-fashion-tailwind/" target="_blank">Fashion E-Commerce</a></td></tr>
-                              </tbody>
-                              <thead>
-                                <tr class="bg-[#c04e3a]">
-                                  <th class="text-white font-inter font-medium text-[18px]">Javascript</th>
-                                </tr>
-                              </thead>
-                              <tbody class="text-[#989AA6] dark:text-[#989AA6] ">
-                                <tr><td><a href="https://amahim.github.io/mini-project/" target="_blank">Mini Projects</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/payoo-bank/" target="_blank">PayCash</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/pc-component-dom/" target="_blank">PC Component Store</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/random-color-genarator/" target="_blank">Random Color Genarator</a></td></tr>
-                                <tr><td><a href="https://amahim.github.io/a5-donate/" target="_blank">Donation Site</a></td></tr>
-                                <tr><td><a href="https://petifys.netlify.app" target="_blank">Pet Adopt Site</a></td></tr>
-                                <tr><td><a href="https://dream11bpl.netlify.app" target="_blank">BPL Dream11</a></td></tr>
-                              </tbody>
-                              <thead>
-                                <tr class="bg-[#c04e3a]">
-                                  <th class="text-white font-inter font-medium text-[18px]">React</th>
-                                </tr>
-                              </thead>
-                              <tbody class="text-[#989AA6] dark:text-[#989AA6] ">
-                                <tr><td><a href="https://knowledgecafereact.netlify.app/" target="_blank">Knowledge Cafe</a></td></tr>
-                                <tr><td><a href="https://reactchefstable.netlify.app/" target="_blank">Chef's Table</a></td></tr>
-                                <tr><td><a href="https://dream11bpl.netlify.app/" target="_blank">Cricket Fantasy</a></td></tr>
-                                <tr><td><a href="https://booksvibess.netlify.app/" target="_blank">Book Vibe</a></td></tr>
-                                <tr><td><a href="https://gadgetgoats.netlify.app/" target="_blank">Gadget Heaven</a></td></tr>
-                                <tr><td><a href="https://latestdragonnews.netlify.app/" target="_blank">Dragon News</a></td></tr>
-                                <tr><td><a href="https://ecovoyages.netlify.app/" target="_blank">Eco-Adventure</a></td></tr>
-                              </tbody>
-                            </table>
-                          </div>
-                     </div>
-                 </div>
-                <!-- l-down socials-->
-                 <div class="bg-bg-prim border-2 border-[#262626] rounded-xl px-4 py-4" id="socials">
-                    <!-- headings -->
-                    <div class="badge badge-primary rounded-xl bg-orng border-0 badge-sm p-3 md:p-4">
-                        <h4 class="text-white  md:font-medium md:text-[20px]">My Socials</h4>
-                    </div>
-                    <div class="flex gap-10 mt-4 justify-around md:justify-start">
-                        <a href="https://www.facebook.com/Mahim.Arif2?mibextid=LQQJ4d"><img src="./images/fb.svg" alt=""></a>
-                        <a href="https://github.com/amahim"><img src="./images/gh.svg" alt=""></a>
-                        <a href="https://bd.linkedin.com/"><img src="./images/linkedin-icon 1.svg" alt=""></a>
-                    </div>
-                 </div>
+      <section
+        class="w-4/5 mx-auto flex md:flex-row flex-col mt-5 md:justify-between md:gap-0 gap-4"
+      >
+        <!-- left side -->
+        <div class="md:w-[49%] w-full space-y-4">
+          <!-- l-up projects-->
+          <div
+            class="bg-bg-prim border-2 border-[#262626] rounded-xl px-4 py-4"
+            id="projects"
+          >
+            <!-- headings -->
+            <div
+              class="badge badge-primary rounded-xl bg-orng border-0 badge-sm p-3 md:p-4"
+            >
+              <h4 class="text-white md:font-medium md:text-[20px]">
+                Recent Projects
+              </h4>
             </div>
+            <!-- works -->
+            <div class="mt-2">
+              <div class="md:h-48 h-52 overflow-x-auto rounded-xl">
+                <table class="table table-pin-rows rounded-xl">
+                  <thead>
+                    <tr class="bg-[#c04e3a]">
+                      <th class="text-white font-inter font-medium text-[18px]">
+                        Html/Css-Tailwind-daisyUI
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-[#989AA6] dark:text-[#989AA6]">
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/biker-zone-daisyUi/"
+                          target="_blank"
+                          >Biker Zone</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/assignment-three/"
+                          target="_blank"
+                          >House Designing Site</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/assignment-two/"
+                          target="_blank"
+                          >Fitness Site</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/hockey-site/"
+                          target="_blank"
+                          >Hockey Site</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/chocolate-shop/"
+                          target="_blank"
+                          >Chocolate Shop</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/tea-house-tailwind/"
+                          target="_blank"
+                          >Tea House</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/penguin-fashion-tailwind/"
+                          target="_blank"
+                          >Fashion E-Commerce</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr class="bg-[#c04e3a]">
+                      <th class="text-white font-inter font-medium text-[18px]">
+                        Javascript
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-[#989AA6] dark:text-[#989AA6]">
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/mini-project/"
+                          target="_blank"
+                          >Mini Projects</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/payoo-bank/"
+                          target="_blank"
+                          >PayCash</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/pc-component-dom/"
+                          target="_blank"
+                          >PC Component Store</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/random-color-genarator/"
+                          target="_blank"
+                          >Random Color Genarator</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://amahim.github.io/a5-donate/"
+                          target="_blank"
+                          >Donation Site</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="https://petifys.netlify.app" target="_blank"
+                          >Pet Adopt Site</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="https://dream11bpl.netlify.app" target="_blank"
+                          >BPL Dream11</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr class="bg-[#c04e3a]">
+                      <th class="text-white font-inter font-medium text-[18px]">
+                        React
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-[#989AA6] dark:text-[#989AA6]">
+                    <tr>
+                      <td>
+                        <a
+                          href="https://knowledgecafereact.netlify.app/"
+                          target="_blank"
+                          >Knowledge Cafe</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://reactchefstable.netlify.app/"
+                          target="_blank"
+                          >Chef's Table</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://dream11bpl.netlify.app/"
+                          target="_blank"
+                          >Cricket Fantasy</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://booksvibess.netlify.app/"
+                          target="_blank"
+                          >Book Vibe</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://gadgetgoats.netlify.app/"
+                          target="_blank"
+                          >Gadget Heaven</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://latestdragonnews.netlify.app/"
+                          target="_blank"
+                          >Dragon News</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://ecovoyages.netlify.app/"
+                          target="_blank"
+                          >Eco-Adventure</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr class="bg-[#c04e3a]">
+                      <th class="text-white font-inter font-medium text-[18px]">
+                        Full Stack
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-[#989AA6] dark:text-[#989AA6]">
+                    <tr>
+                      <td>
+                        <a
+                          href="https://starflixhits.netlify.app/"
+                          target="_blank"
+                          >StarFlix</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://sharefood4good.netlify.app/"
+                          target="_blank"
+                          >Food4Good</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="https://unieats.netlify.app/" target="_blank"
+                          >UniEats</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- l-down socials-->
+          <div
+            class="bg-bg-prim border-2 border-[#262626] rounded-xl px-4 py-4"
+            id="socials"
+          >
+            <!-- headings -->
+            <div
+              class="badge badge-primary rounded-xl bg-orng border-0 badge-sm p-3 md:p-4"
+            >
+              <h4 class="text-white md:font-medium md:text-[20px]">
+                My Socials
+              </h4>
+            </div>
+            <div class="flex gap-10 mt-4 justify-around md:justify-start">
+              <a href="https://www.facebook.com/Mahim.Arif2?mibextid=LQQJ4d"
+                ><img src="./images/fb.svg" alt=""
+              /></a>
+              <a href="https://github.com/amahim"
+                ><img src="./images/gh.svg" alt=""
+              /></a>
+              <a href="https://www.linkedin.com/in/arif-mahim-73743515a/"
+                ><img src="./images/linkedin-icon 1.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
 
-            <!-- right side -->
-            <div class="md:w-[49%] w-full space-y-4">
-                <!-- r-up projects-->
-                <div class="bg-bg-prim border-2 border-[#262626] rounded-xl px-4 py-4">
-                    <!-- headings -->
-                    <div class="badge badge-primary rounded-xl bg-orng border-0 badge-sm p-3 md:p-4">
-                        <h4 class="text-white  md:font-medium md:text-[20px]">Languages & Tools</h4>
-                    </div>
-                    <div class="grid grid-cols-3 md:grid-cols-4 gap-10 mt-4 justify-around md:justify-between">
-                        <a href="https://www.w3schools.com/html/"><img src="./images/html.svg" alt=""></a>
-                        <a href="https://www.w3schools.com/css/"><img src="./images/css.svg" alt=""></a>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="./images/js.svg" alt=""></a>
-                        <a href="https://react.dev/"><img src="./images/react-2.svg" alt=""></a>
-                        <a href="https://nodejs.org/en"><img src="./images/nodejs-logo-svgrepo-com.svg" alt=""></a>
-                        <a href="https://www.mongodb.com/"><img src="./images/mongodb-svgrepo-com.svg" alt=""></a>
-                        <a href="https://firebase.google.com/"><img src="./images/firebase-svgrepo-com.svg" alt=""></a>
-                    </div>
-                 </div>
-                <!-- r-down -->
-                <div class="bg-bg-prim border-2 border-[#262626] rounded-xl px-4 py-4">
-                    <!-- headings -->
-                    <div class="badge badge-primary rounded-xl bg-orng border-0 badge-sm p-3 md:p-4">
-                        <h4 class="text-white  md:font-medium md:text-[20px]">Contact</h4>
-                    </div>
-                    <!-- form -->
-                     <div class="mt-2" id="contact">
-                        <!-- <form class="md:h-[172px] space-y-2">
+        <!-- right side -->
+        <div class="md:w-[49%] w-full space-y-4">
+          <!-- r-up projects-->
+          <div
+            class="bg-bg-prim border-2 border-[#262626] rounded-xl px-4 py-4"
+          >
+            <!-- headings -->
+            <div
+              class="badge badge-primary rounded-xl bg-orng border-0 badge-sm p-3 md:p-4"
+            >
+              <h4 class="text-white md:font-medium md:text-[20px]">
+                Languages & Tools
+              </h4>
+            </div>
+            <div
+              class="grid grid-cols-3 md:grid-cols-4 gap-10 mt-4 justify-around md:justify-between"
+            >
+              <a href="https://www.w3schools.com/html/"
+                ><img src="./images/html.svg" alt=""
+              /></a>
+              <a href="https://www.w3schools.com/css/"
+                ><img src="./images/css.svg" alt=""
+              /></a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                ><img src="./images/js.svg" alt=""
+              /></a>
+              <a href="https://react.dev/"
+                ><img src="./images/react-2.svg" alt=""
+              /></a>
+              <a href="https://nodejs.org/en"
+                ><img src="./images/nodejs-logo-svgrepo-com.svg" alt=""
+              /></a>
+              <a href="https://www.mongodb.com/"
+                ><img src="./images/mongodb-svgrepo-com.svg" alt=""
+              /></a>
+              <a href="https://firebase.google.com/"
+                ><img src="./images/firebase-svgrepo-com.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- r-down -->
+          <div
+            class="bg-bg-prim border-2 border-[#262626] rounded-xl px-4 py-4"
+          >
+            <!-- headings -->
+            <div
+              class="badge badge-primary rounded-xl bg-orng border-0 badge-sm p-3 md:p-4"
+            >
+              <h4 class="text-white md:font-medium md:text-[20px]">Contact</h4>
+            </div>
+            <!-- form -->
+            <div class="mt-2" id="contact">
+              <!-- <form class="md:h-[172px] space-y-2">
                             <div class="flex md:flex-row flex-col md:justify-between gap-2">
                                 <input type="email" placeholder="Your email" class="input input-bordered input-sm w-full" />
                                 <input type="number" placeholder="Your phone" class="input input-bordered input-sm w-full" />
@@ -214,28 +506,56 @@
                             </div>
                         </form> -->
 
-                        <!-- test form b -->
-                        <form class="md:h-[172px] space-y-2 " action="https://formsubmit.co/ddb6305a073dc04ef0bba3fe1047704b" method="POST">
-                        <!-- <form class="md:h-[172px] space-y-2" action="https://formsubmit.co/arifbin71@gmail.com" method="POST"> -->
-                          <div class="flex md:flex-row flex-col md:justify-between gap-2 ">
-                              <input type="email" name="email" required placeholder="Your email" class=" text-[#989AA6] dark:text-[#989AA6]  border-2 border-[#989AA6] input input-bordered input-sm w-full bg-[rgb(27,27,27)]" />
-                              <input type="text" name="name" required placeholder="Your name" class=" text-[#989AA6] dark:text-[#989AA6] border-2 border-[#989AA6]  input input-bordered input-sm w-full bg-[rgb(27,27,27)] ">
-                              <!-- <input type="number" placeholder="Your phone" class="input input-bordered input-sm w-full" /> -->
-                          </div>
-                          <textarea placeholder="Type here"class="bg-[rgb(27,27,27)] textarea textarea-bordered textarea-sm w-full text-[#989AA6] dark:text-[#989AA6] border-2 border-[#989AA6]" name="message"></textarea>
-                          <div>
-                            <input type="hidden" name="_next" value="https://mahimarif.netlify.app">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_captcha" value="false">
-                              <button type="submit" class=" text-[#989AA6] dark:text-[#989AA6] btn w-full border-2 border-[#989AA6] font-medium md:text-2xl text-[18px] md:text-[20px] bg-[#16161694]" >Send <i class="fa-solid fa-envelope"></i></button>
-                          </div>
-                          
-                        </form>
-                        <!-- test form end -->
-                     </div>
-                 </div>
+              <!-- test form b -->
+              <form
+                class="md:h-[172px] space-y-2"
+                action="https://formsubmit.co/ddb6305a073dc04ef0bba3fe1047704b"
+                method="POST"
+              >
+                <!-- <form class="md:h-[172px] space-y-2" action="https://formsubmit.co/arifbin71@gmail.com" method="POST"> -->
+                <div class="flex md:flex-row flex-col md:justify-between gap-2">
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Your email"
+                    class="text-[#989AA6] dark:text-[#989AA6] border-2 border-[#989AA6] input input-bordered input-sm w-full bg-[rgb(27,27,27)]"
+                  />
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Your name"
+                    class="text-[#989AA6] dark:text-[#989AA6] border-2 border-[#989AA6] input input-bordered input-sm w-full bg-[rgb(27,27,27)]"
+                  />
+                  <!-- <input type="number" placeholder="Your phone" class="input input-bordered input-sm w-full" /> -->
+                </div>
+                <textarea
+                  placeholder="Type here"
+                  class="bg-[rgb(27,27,27)] textarea textarea-bordered textarea-sm w-full text-[#989AA6] dark:text-[#989AA6] border-2 border-[#989AA6]"
+                  name="message"
+                ></textarea>
+                <div>
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://mahimarif.netlify.app"
+                  />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <button
+                    type="submit"
+                    class="text-[#989AA6] dark:text-[#989AA6] btn w-full border-2 border-[#989AA6] font-medium md:text-2xl text-[18px] md:text-[20px] bg-[#16161694]"
+                  >
+                    Send <i class="fa-solid fa-envelope"></i>
+                  </button>
+                </div>
+              </form>
+              <!-- test form end -->
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
